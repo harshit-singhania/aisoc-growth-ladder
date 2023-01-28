@@ -17,27 +17,14 @@ body{
     background-color: #ef233c;
 }
 
-.head-contain{
-    position: fixed;
-}
 .header{
     z-index: +5;
     background-color: #000000;
+    position: fixed;
     width: 100vw;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 6fr 1fr;
     filter: drop-shadow(0px 4px 5px #14213D);
-}
-
-.option-container{
-    display: table;
-    align-items: center;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-.option-container a{
-    padding-right: 30px;
-    float: right;
 }
 
 .header h1{
@@ -46,7 +33,6 @@ body{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 50px;
-    font-weight: bold;
     margin: 10px;
     letter-spacing: normal;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3s;
@@ -60,7 +46,7 @@ body{
     font-size: 25px;
     margin-top: auto;
     margin-bottom: auto;
-    margin: auto;
+    margin-right: 30px;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1.2s;
 }
 .header a:hover{
@@ -73,11 +59,8 @@ table, th, td{
 }
 
 .contain{
-    z-index: -1;
-    width: 95vw;
     position: absolute;
     left: 50%;
-    margin-top: 100px;
 }
 
 .activity{
@@ -87,6 +70,8 @@ table, th, td{
     padding: 30px;
     background-color: #f6f6f6;
     border: 2px;
+    text-align: center;
+    margin-top: 200px;
     filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.307));
 }
 .activity th,td{
@@ -95,46 +80,18 @@ table, th, td{
     padding-right: 10px;
 }
 
-.container-md{
-    position: absolute;
-    margin-top: 120px;
-}
+/* Styles for profile.html ----- */
 
-.assist{
-    background-color: white;
+.page{
+    font-weight: bolder;
+    font-size: 20px;
+    position: relative;
+    border-radius: 20px;
     left: -50%;
+    margin-top: 120px;
+    width: 88vw;
+    height: 100vh;
+    background-color: #ffffff;
+    filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.307));
+    padding: 40px;
 }
-
-/* @font-face {
-    font-family: Nexa;
-    src: url(../assets/Nexa\ Light.otf);
-}
-
-*{
-    font-family: Nexa;
-}
-
-body{
-    margin: 0;
-}
-.navbar-expand-lg, .bg-body-tertiary{
-    background-color: black;
-}
-
-.container-fluid{
-    padding: 0;
-}
-
-.navbar{
-    padding-left: 20px;
-}
-
-.bg-body{
-    background-color: black!important;
-}
-
-.navbar-brand{
-    font-size: 30px;
-    font-weight: bold;
-    color: white!important;
-} */

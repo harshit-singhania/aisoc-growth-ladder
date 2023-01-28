@@ -1,0 +1,114 @@
+@font-face {
+    font-family: Nexa;
+    src: url(../assets/Nexa\ Bold.otf);
+}
+@font-face {
+    font-family: NexaL;
+    src: url(../assets/Nexa\ Light.otf);
+}
+
+*{
+	font-family: Nexa;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	margin: 0;
+}
+
+body{
+	background-color: black;
+}
+
+h1{
+	color: white;
+}
+
+.intro{
+	font-weight: bolder;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    background: linear-gradient(to right, #ef233c 30%,  #FCA311);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	padding-right: 62.5px;
+	padding-bottom: 4px;
+	z-index: -5;
+	user-select: none;
+	animation: ais 10s forwards;
+	position: relative;
+}
+
+.input{
+	position: fixed;
+	z-index: +5;
+    text-align: center;
+    top: 35%;
+    left: 50%;
+    padding: 20px;
+    transform: translate(-50%, 0);
+	opacity: 0%;
+	animation: opac 2s forwards;
+	animation-delay: 2.5s;
+}
+.input input[type=text], input[type=password]{
+	font-family: NexaL;
+	font-weight: lighter;
+	color: rgb(195, 195, 195);
+	letter-spacing: 2px;
+	font-size: 20px;
+	background-color: #111111d9;
+	padding: 10px;
+	border: 0px;
+	border-radius: 20px;
+	margin: 4px;
+}
+
+input[type=text]:focus, input[type=password]:focus{
+	/* border: 1px solid #1670BE; */
+    box-shadow: 0 0 3px #1670BE;
+    outline: none;
+}
+
+h3, h4{
+	font-size: 25px;
+	color: rgba(255, 255, 255, 0.627);
+}
+h4{
+	font-size: 20px;
+	font-family: NexaL;
+	letter-spacing: 2px;
+	margin-bottom: 10px;
+}
+
+
+@keyframes ais {
+	0%{
+		letter-spacing: normal;
+		transform: scale(1);
+	}
+	10%{
+		letter-spacing: normal;
+		transform: scale(2);
+		filter: blur(0px);
+	}
+	40%{
+		letter-spacing: 30px;
+		transform: scale(80);
+		opacity: 100%;
+	}
+	100%{
+		letter-spacing: 30px;
+		transform: scale(80);
+		opacity: 40%;
+		filter: blur(1px);
+	}
+}
+@keyframes opac {
+	0%{
+		opacity: 0%;
+	}
+	100%{
+		opacity: 100%;
+	}
+}
